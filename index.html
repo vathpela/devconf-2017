@@ -67,12 +67,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    <title>System Firmware updates on Linux</title>
     
-    <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
-    <meta name="author" content="Bartek Szopka" />
+    <meta name="description" content="Firmware Updates on Linux - DevConf.cz 2017" />
+    <meta name="author" content="Peter Jones <pjones@redhat.com>" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="Overpass/webfonts/overpass-webfont/overpass.css" rel="stylesheet" />
 
     <!--
         
@@ -90,9 +90,9 @@
         
     -->
     <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/pjones.css" rel="stylesheet" />
     
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
 </head>
 
 <!--
@@ -163,8 +163,67 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <q>Aren’t you just <b>bored</b> with all those slides-based presentations?</q>
+    <div id="first" class="step slide" data-x="-10000" data-y="-1500">
+	<div style="height:10%"><br></div>
+	<div ><b>System Firmware Updates on Linux</b></div>
+	<div style="height:40%"><br></div>
+	<div style="text-align:right;float:right;clear:right;">
+	Peter Jones<br>
+	pjones@redhat.com<br>
+	Desktop Hardware Enablement<br>
+	Base OS Engineering
+	<div class="footer"><img src="images/Logo_RH_RGB_Default.svg" ></div>
+	</div>
+    </div>
+
+    <div class="step terminal" data-x="-9000" data-y="-1500">
+Kernel compatibility 7.10 - WATCOMC - 80386 CPU required - FAT32 support<br>
+<br>
+(C) Copyright 1995-2012 Pasquale J. Villani and The FreeDOS Project.<br>
+All Rights reserved. This is free software and comes with ABSOLUTELY NO<br>
+WARRANTY; you can redistribute it and/or modify it under the terms of the<br>
+GNU General Public License as published by the Free Software Foundation;<br>
+either version 2, or (at your option) any later version.<br>
+C: Hd1 Pri[ 1], CHS=     0-32-33, start=     1 MB, size=  3839 MB<br>
+<br>
+Current date is Thu 05-05-2016<br>
+Enter new date (mm-dd-[cc]yy): <q style="background-color:#b0b0b0;">a</q>
+	</blockquote>
+    </div>
+
+    <div class="step terminal" data-x="-8000" data-y="-1500">
+Kernel compatibility 7.10 - WATCOMC - 80386 CPU required - FAT32 support<br>
+<br>
+(C) Copyright 1995-2012 Pasquale J. Villani and The FreeDOS Project.<br>
+All Rights reserved. This is free software and comes with ABSOLUTELY NO<br>
+WARRANTY; you can redistribute it and/or modify it under the terms of the<br>
+GNU General Public License as published by the Free Software Foundation;<br>
+either version 2, or (at your option) any later version.<br>
+C: HD1 Pri[ 1], CHS=     0-32-33, start=     1 MB, size=  3839 MB<br>
+<br>
+Current date is Thu 05-05-2016<br>
+Enter new date (mm-dd-[cc]yy): 01-01-1970<br>
+Current time is 12:38:16.21 pm<br>
+Enter new time: 00:00:00<br>
+C:\&gt;flash.bat X10SDVF6.302<br>
+################################################################################<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compare&nbsp;Flash&nbsp;Descriptor&nbsp;Table(FDT).&nbsp;Please&nbsp;wait...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#<br>
+#&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#<br>
+################################################################################<br>
++------------------------------------------------------------------------------+<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AMI&nbsp;Firmware&nbsp;Update&nbsp;Utility&nbsp;&nbsp;v5.07.01&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright&nbsp;(C)2014&nbsp;American&nbsp;Megatrends&nbsp;Inc.&nbsp;All&nbsp;Rights&nbsp;Reserved.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
++------------------------------------------------------------------------------+<br>
+&nbsp;Reading flash ................ 0x00218000 (17%)<br>
+    </div>
+
+    <div class="step terminal" data-x="1000" data-y="-1500">
+	<img src="images/freedos-firmware-update.png" width="720" height="400">
+    </div>
+
+    <div id="second" class="step" data-x="10000" data-y="10000">
+	    <blockquote>foo</blockquote>
     </div>
 
     <!--
@@ -182,14 +241,12 @@
         Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
         
     -->
-    <div class="step slide" data-x="0" data-y="-1500">
-        <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
-    </div>
-
-    <div class="step slide" data-x="1000" data-y="-1500">
+    <!--
+    <div class="step slide" data-x="1000" data-y="-1500" >
         <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
     </div>
 
+    -->
     <!--
         
         This is an example of step element being scaled.
