@@ -90,8 +90,6 @@ body {
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(190, 190, 190)));
     background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:     -ms-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
     background:         radial-gradient(rgb(240, 240, 240), rgb(190, 190, 190));
 }
 
@@ -188,7 +186,7 @@ a:focus {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -250,16 +248,26 @@ a:focus {
     First is the title step with a big <h1> (no room for padding) and some
     3D positioning along Z axis.
 */
-
 #title {
-    padding: 0;
+    font-family: "overpass";
+    overflow: auto;
+}
+
+#title img {
+    float: left;
+}
+
+#title .card {
+	text-align: right;
+	font-size: 32px;
+	float: right;
 }
 
 #title .try {
     font-size: 64px;
     position: absolute;
     top: -0.5em;
-    left: 1.5em;
+    left: 10.5em;
 
     -webkit-transform: translateZ(20px);
     -moz-transform:    translateZ(20px);
@@ -269,7 +277,7 @@ a:focus {
 }
 
 #title h1 {
-    font-size: 190px;
+    font-size: 40px;
 
     -webkit-transform: translateZ(50px);
     -moz-transform:    translateZ(50px);
@@ -278,8 +286,20 @@ a:focus {
     transform:         translateZ(50px);
 }
 
-#title .footnote {
-    font-size: 32px;
+.step .h1 {
+    font-size: 90px;
+
+    -webkit-transform: translateZ(50px);
+    -moz-transform:    translateZ(50px);
+    -ms-transform:     translateZ(50px);
+    -o-transform:      translateZ(50px);
+    transform:         translateZ(50px);
+}
+
+.step .footnote {
+    font-size: 20px;
+    text-align: right;
+    float: right;
 }
 
 /*
@@ -718,3 +738,32 @@ a:focus {
 	background-color: black;
 }
 
+.overlap-step .step {
+    position: relative;
+    width: 900px;
+    padding: 40px;
+    margin: 20px auto;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:    border-box;
+    -ms-box-sizing:     border-box;
+    -o-box-sizing:      border-box;
+    box-sizing:         border-box;
+
+    font-family: 'PT Serif', georgia, serif;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
+.impress-enabled-overlap .overlap-step {
+    margin: 0;
+    opacity: 0.0;
+
+    -webkit-transition: opacity 1s;
+    -moz-transition:    opacity 1s;
+    -ms-transition:     opacity 1s;
+    -o-transition:      opacity 1s;
+    transition:         opacity 1s;
+}
+
+.impress-enabled-overlap .overlap-step.active { opacity: 1 }

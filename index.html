@@ -164,20 +164,40 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="first" class="step slide" data-x="-10000" data-y="-1500">
-	<div style="height:10%"><br></div>
-	<div ><b>System Firmware Updates on Linux</b></div>
-	<div style="height:40%"><br></div>
-	<div style="text-align:right;float:right;clear:right;">
+    <div id="title" class="step" data-x="-1000" data-y="0">
+	    <img src="images/RedHat.svg" style="width:800px;">
+	<span class="card">
+	    <br>
+	    <br>
+	    <br>
+		<h1><b>Firmware Updates on Linux</b></h1><br>
 	Peter Jones<br>
 	pjones@redhat.com<br>
 	Desktop Hardware Enablement<br>
 	Base OS Engineering
-	<div class="footer"><img src="images/Logo_RH_RGB_Default.svg" ></div>
-	</div>
+	</span>
     </div>
 
-    <div class="step terminal" data-x="-9000" data-y="-1500">
+    <div id="winbond" class="step" data-x="0" data-y="0">
+	<img src="images/winbond.png" style="float:left;padding:40px;">
+	<span style="font-size:75px;"><br>This<br>cute<br>little<br>guy.</span>
+    </div>
+    <div id="msdos" class="step" data-x="1000" data-y="0">
+In the beginning...
+<div class="terminal">
+Starting MS-DOS...<br>
+<br>
+Microsoft(R)&nbsp;MS-DOS(R)&nbsp;Version&nbsp;6.21<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(C)Copyright&nbsp;Microsoft&nbsp;Corp&nbsp;1981-1993.<br>
+<br>
+Current date is Thu 05-05-2016<br>
+Enter new date (mm-dd-yy): <q style="background-color:#b0b0b0;">a</q><br>
+<br>
+</div>
+    </div>
+    <div id="freedos" class="step" data-x="1000" data-y="0">
+Then things got (slightly) better
+<div class="terminal">
 Kernel compatibility 7.10 - WATCOMC - 80386 CPU required - FAT32 support<br>
 <br>
 (C) Copyright 1995-2012 Pasquale J. Villani and The FreeDOS Project.<br>
@@ -185,14 +205,15 @@ All Rights reserved. This is free software and comes with ABSOLUTELY NO<br>
 WARRANTY; you can redistribute it and/or modify it under the terms of the<br>
 GNU General Public License as published by the Free Software Foundation;<br>
 either version 2, or (at your option) any later version.<br>
-C: Hd1 Pri[ 1], CHS=     0-32-33, start=     1 MB, size=  3839 MB<br>
+C: HD1 Pri[ 1], CHS=     0-32-33, start=     1 MB, size=  3839 MB<br>
 <br>
 Current date is Thu 05-05-2016<br>
 Enter new date (mm-dd-[cc]yy): <q style="background-color:#b0b0b0;">a</q>
-	</blockquote>
     </div>
-
-    <div class="step terminal" data-x="-8000" data-y="-1500">
+    </div>
+    <div id="freedos2" class="step" data-x="1000" data-y="0">
+But you're still doing this
+<div class="terminal">
 Kernel compatibility 7.10 - WATCOMC - 80386 CPU required - FAT32 support<br>
 <br>
 (C) Copyright 1995-2012 Pasquale J. Villani and The FreeDOS Project.<br>
@@ -206,6 +227,7 @@ Current date is Thu 05-05-2016<br>
 Enter new date (mm-dd-[cc]yy): 01-01-1970<br>
 Current time is 12:38:16.21 pm<br>
 Enter new time: 00:00:00<br>
+<br>
 C:\&gt;flash.bat X10SDVF6.302<br>
 ################################################################################<br>
 #&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;#<br>
@@ -218,155 +240,214 @@ C:\&gt;flash.bat X10SDVF6.302<br>
 +------------------------------------------------------------------------------+<br>
 &nbsp;Reading flash ................ 0x00218000 (17%)<br>
     </div>
-
-    <div class="step terminal" data-x="1000" data-y="-1500">
-	<img src="images/freedos-firmware-update.png" width="720" height="400">
     </div>
 
-    <div id="second" class="step" data-x="10000" data-y="10000">
-	    <blockquote>foo</blockquote>
+    <div class="step" data-x="2000" data-y="900" data-rotate=180 data-scale='2'>
+	    <h1>this is <strong>not ideal</strong>.</h1>
     </div>
 
-    <!--
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        
-        So in the example below it'll be `step-2`.
-        
-        The hash part of the url when this step is active will be `#/step-2`.
-        
-        You can also use `#step-2` in a link, to point directly to this particular step.
-        
-        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-        
-    -->
-    <!--
-    <div class="step slide" data-x="1000" data-y="-1500" >
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+    <div id="changelog" class="step" data-x="1000" data-y="900" data-rotate=270 style="font-size:30px;">
+An aside about your system firmware changelog
+	    <blockquote class="terminal">
+&lt;1.49&gt;<br>
+&nbsp;UEFI:&nbsp;1.49&nbsp;/&nbsp;ECP:&nbsp;1.20<br>
+-&nbsp;[Important]&nbsp;Security&nbsp;fix&nbsp;addresses&nbsp;LEN-8324&nbsp;System&nbsp;Management&nbsp;Mode&nbsp;(SMM)&nbsp;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BIOS&nbsp;Vulnerability.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Note)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;UEFI&nbsp;BIOS&nbsp;has&nbsp;been&nbsp;updated&nbsp;to&nbsp;version&nbsp;1.49&nbsp;or&nbsp;higher,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it&nbsp;is&nbsp;no&nbsp;longerable&nbsp;to&nbsp;roll&nbsp;back&nbsp;to&nbsp;the&nbsp;version&nbsp;before&nbsp;1.49<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;security&nbsp;improvement.<br>
+-&nbsp;(Fix)&nbsp;Fixed&nbsp;an&nbsp;issue&nbsp;where&nbsp;the&nbsp;brightness&nbsp;control&nbsp;might&nbsp;not&nbsp;work&nbsp;on&nbsp;Windows&nbsp;XP.<br>
+<br>
+&lt;1.48&gt;<br>
+&nbsp;UEFI:&nbsp;1.48&nbsp;/&nbsp;ECP:&nbsp;1.20<br>
+-&nbsp;[Important]&nbsp;Security&nbsp;fix&nbsp;addresses&nbsp;LEN-2015-002&nbsp;SMM&nbsp;"Incursion"&nbsp;Attack&nbsp;and<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;some&nbsp;security&nbsp;fixes.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Note)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;the&nbsp;UEFI&nbsp;BIOS&nbsp;has&nbsp;been&nbsp;updated&nbsp;to&nbsp;version&nbsp;1.48&nbsp;or&nbsp;higher,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;it&nbsp;is&nbsp;no&nbsp;longerable&nbsp;to&nbsp;roll&nbsp;back&nbsp;to&nbsp;the&nbsp;version&nbsp;before&nbsp;1.48<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for&nbsp;security&nbsp;improvement.<br>
+-&nbsp;(Fix)&nbsp;Fixed&nbsp;an&nbsp;issue&nbsp;where&nbsp;the&nbsp;computer&nbsp;might&nbsp;not&nbsp;enter&nbsp;Startup&nbsp;interrupt&nbsp;menu.<br>
+<br>
+&lt;1.46&gt;<br>
+&nbsp;UEFI:&nbsp;1.46&nbsp;/&nbsp;ECP:&nbsp;1.20<br>
+-&nbsp;(New)&nbsp;Updated&nbsp;the&nbsp;CPU&nbsp;microcode.<br>
+-&nbsp;(Fix)&nbsp;Corrected&nbsp;the&nbsp;help&nbsp;message&nbsp;for&nbsp;enabling&nbsp;the&nbsp;microphone&nbsp;in&nbsp;the&nbsp;BIOS&nbsp;Setup.<br>
+	    </blockquote>
     </div>
-
-    -->
-    <!--
-        
-        This is an example of step element being scaled.
-        
-        Again, we use a `data-` attribute, this time it's `data-scale="4"`, so it means that this
-        element will be 4 times larger than the others.
-        From presentation and transitions point of view it means, that it will have to be scaled
-        down (4 times) to make it back to its correct size.
-        
-    -->
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+    <div id="changelog2" class="step" data-x="1000" data-y="-100" data-rotate=270 style="font-size:30px">
+	    You are so very, very pwned.<br>
+	    <br>
+	    <blockquote>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</blockquote>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+	    <span class="footnote" style="opacity:0;"><br>* if you're not you're using Fedora with Secure Boot</span>
     </div>
-
-    <!--
-        
-        This element introduces rotation.
-        
-        Notation shouldn't be a surprise. We use `data-rotate="90"` attribute, meaning that this
-        element should be rotated by 90 degrees clockwise.
-        
-    -->
-    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>It’s a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+    <div id="changelog3" class="step" data-x="1000" data-y="-100" data-rotate=270 style="font-size:30px">
+	    You are so very, very pwned.<br>
+	    <br>
+	    <blockquote style="font-size:40px;">Security fix addresses SMM "Incursion" Attack and some security fixes.</blockquote>
+	    <br>
+	    <br>
+	    <br>
+	    <span class="footnote" style="opacity:0;"><br>* if you're not you're using Fedora with Secure Boot</span>
     </div>
-
-    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+    <div id="changelog4" class="step" data-x="1000" data-y="-100" data-rotate=270 style="font-size:30px">
+	    You are so very, very pwned.<br>
+	    <br>
+	    <blockquote style="font-size:40px;">Security fix addresses SMM "Incursion" Attack and some security fixes.</blockquote>
+	    <br>
+	    This probably<sup><sup><small style="font-size:20px;">*</small></sup></sup> means an attacker with root can rewrite your system firmware.<br>
+	    <span class="footnote" style="opacity:0;"><br>* if you're not you're using Fedora with Secure Boot</span>
     </div>
-
-    <!--
-        
-        And now it gets really exciting! We move into third dimension!
-        
-        Along with `data-x` and `data-y`, you can define the position on third (Z) axis, with
-        `data-z`. In the example below we use `data-z="-3000"` meaning that element should be
-        positioned far away from us (by 3000px).
-        
-    -->
-    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
+    <div id="changelog5" class="step" data-x="1000" data-y="-100" data-rotate=270 style="font-size:30px">
+	    You are so very, very pwned.<br>
+	    <br>
+	    <blockquote style="font-size:40px;">Security fix addresses SMM "Incursion" Attack and some security fixes.</blockquote>
+	    <br>
+	    This probably<sup><sup><small style="font-size:20px;">*</small></sup></sup> means an attacker with root can rewrite your system firmware.<br>
+	    <span class="footnote" style="opacity:100;"><br>* if you're not you're using Fedora with Secure Boot</span>
     </div>
-
-    <!--
-        
-        This step here doesn't introduce anything new when it comes to data attributes, but you
-        should notice in the demo that some words of this text are being animated.
-        It's a very basic CSS transition that is applied to the elements when this step element is
-        reached.
-        
-        At the very beginning of the presentation all step elements are given the class of `future`.
-        It means that they haven't been visited yet.
-        
-        When the presentation moves to given step `future` is changed to `present` class name.
-        That's how animation on this step works - text moves when the step has `present` class.
-        
-        Finally when the step is left the `present` class is removed from the element and `past`
-        class is added.
-        
-        So basically every step element has one of three classes: `future`, `present` and `past`.
-        Only one current step has the `present` class.
-        
-    -->
-    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+    <div id="question" class="step" data-x="0" data-y="900" data-rotate=270 data-rotate-y=180 data-rotate-z=180 data-z=45>
+	    So, what can we do about it?
     </div>
-
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+    <div id="surface" class="step" data-x="0" data-y="900" data-rotate=270 style="text-align:left;">
+	    <img src="images/surface.png" style="float:right;padding:7px;">
+	    Somebody made this little machine.
     </div>
-
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+    <div id="win10hcr0" class="step" data-x="0" data-y="-100" data-rotate=270 >
+    		And then they wrote some requirements about it.
     </div>
-
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
+    <div id="win10hcr1" class="step" data-x="0" data-y="-100" data-rotate=270 >
+	    <img src="images/win10hcr.png">
     </div>
-
-    <!--
-        
-        And the last one shows full power and flexibility of impress.js.
-        
-        You can not only position element in 3D, but also rotate it around any axis.
-        So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
-        10 degrees (clockwise) around Y axis.
-        
-        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
-        as `data-rotate` (these two are basically aliases).
-        
-    -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
+    <div id="win10hcr2" class="step" data-x="0" data-y="-100" data-rotate=270 >
+    		Okay, fine, I can use that.
+		<img style="opacity:0;" src="images/fine.png">
     </div>
-
-    <!--
-        
-        So to summarize of all the possible attributes used to position presentation steps, we have:
-        
-        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
-            the canvas in pixels; their default value is 0;
-        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
-            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
-            are exactly the same;
-        * `data-scale` - defines the scale of step element; default value is 1
-        
-        These values are used by impress.js in CSS transformation functions, so for more information consult
-        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
-        
-    -->
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div id="win10hcr3" class="step" data-x="0" data-y="-100" data-rotate=270 >
+    		Okay, fine, I can use that.
+		<img src="images/fine.png">
     </div>
-
+    <div id="galileo0" class="step" data-x="0" data-y="-1100" data-rotate=270 >
+    		And then somebody else made another machine.
+			<img src="images/galileo-obverse.png" width=900>
+    </div>
+    <div id="galileo1" class="step" data-x="0" data-y="-2100" data-rotate=270 >
+	    Now my desk looks like this.
+	    <img src="images/desk.png" width=900>
+    </div>
+    <div id="galileo2" class="step" data-x="0" data-y="-3100" data-rotate=270 >
+    		I learned a lot of lies about how computers work that day.
+    </div>
+<div id="sdv0" class="step" data-x="0" data-y="-4100" data-rotate=270 >
+	    And then wrote some code.<br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+    </div>
+	<div id="sdv1" class="step" data-x="0" data-y="-4100" data-rotate=270 >
+	    And then wrote some code.<br>
+	    And then somebody sent me a<br>machine to test it on.<br>
+	    <br>
+	    <br>
+    </div>
+    <div id="sdv2" class="step" data-x="0" data-y="-4100" data-rotate=270  >
+	    And then wrote some code.<br>
+	    And then somebody sent me a<br>machine to test it on.<br>
+	    A long time and a pile of patches<br>later, this happened.<br>
+    </div>
+    <div id="sdv3" class="step" data-x="0" data-y="-4100" data-rotate=270 data-scale=2 >
+	    <img src="images/press-play-on-tape.png" width=890 height=710>
+    </div>
+    <div id="sdv4" class="step" data-x="0" data-y="-6100" data-rotate=270 style="font-size:90px;" data-scale=10000>
+	    This is a really big thank you to Harry at Intel and Jeff at Insyde.
+   </div>
+    <div id="hughsie" class="step" data-x="0" data-y="-7100" data-rotate=270>
+	    And then Richard Hughes started doing some awesome stuff.  We'll come back to that.
+    </div>
+    <div id="dell0" class="step" data-x="0" data-y="-8100" data-rotate=270 >
+	    And then I wrote some code.<br>
+	    <br>
+	    <br>
+	    <br>
+	    <br>
+    </div>
+    <div id="dell1" class="step" data-x="0" data-y="-8100" data-rotate=270 >
+	    And then I wrote some code.<br>
+	    And then somebody sent me a<br>machine to test it on.<br>
+	    <br>
+	    <br>
+    </div>
+    <div id="dell2" class="step" data-x="0" data-y="-8100" data-rotate=270 >
+	    And then I wrote some code.<br>
+	    And then somebody sent me a<br>machine to test it on.<br>
+	    A long time and a pile of<br>patches later, this happened.<br>
+    </div>
+    <div id="dell3" class="step" data-x="0" data-y="-9100" data-rotate=270 >
+	    <img src="images/dell.png">
+    </div>
+    <div id="dell4" class="step" data-x="0" data-y="-10100" data-rotate=270 style="font-size:90px;" data-scale=10000>
+	    This is a really big thank you to Jared and Mario on the Dell Linux Client Team.
+    </div>
+    <div id="hughsie0" class="step" data-x="0" data-y="-11100">
+	    So... that stuff Richard was writing.  It's a lot of stuff.
+    </div>
+    <div id="hughsie1" class="step" data-x="0" data-y="-11100">
+<li>fwupd - dbus-activated service for integration with other software
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    </div>
+    <div id="hughsie2" class="step" data-x="0" data-y="-11100">
+<li>fwupd - dbus-activated service for integration with other software
+<li>gnome-software support
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+    </div>
+    <div id="hughsie3" class="step" data-x="0" data-y="-11100">
+<li>fwupd - dbus-activated service for integration with other software
+<li>gnome-software support
+<li>The Linux Vendor Firmware Service (fwupd.org) - a site for vendors to upload firmware for distribution
+	<br>
+	<br>
+	<br>
+    </div>
+    <div id="hughsie4" class="step" data-x="0" data-y="-11100">
+<li>fwupd - dbus-activated service for integration with other software
+<li>gnome-software support
+<li>The Linux Vendor Firmware Service (fwupd.org) - a site for vendors to upload firmware for distribution
+<li>support in fwupd for updating usb devices
+	<br>
+    </div>
+    <div id="hughsie5" class="step" data-x="0" data-y="-11100">
+Everybody thank Richard.
+    </div>
+    <div id="vanity" class="step" data-x="-9000" data-y="-11100" data-scale=10000 data-z=-3000 data-transition-duration=100000>
+<img src="images/Logo_RH_RGB_Default.svg" >
+<br>
+<br>
+<br>
+    </div>
+    <div id="vanity1" class="step" data-x="-9000" data-y="-11100" data-scale=10000 data-z=-3000 data-transition-duration=100000>
+<img src="images/Logo_RH_RGB_Default.svg" >
+Who wants to see me brick my laptop?
+    </div>
 </div>
 
 <!--
