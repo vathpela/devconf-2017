@@ -488,7 +488,8 @@ An aside about your system firmware changelog
     <div id="linux0" class=step data-x=1000 data-y=-6100 data-rotate=270 data-rotate-x=180 style="font-size:30px;">
 	And the Linux parts?<br>
 	<ul style="list-style-type:disc;";>
-		<li style="opacity:100;">/usr/bin/fwupdate - stages the update
+		<li style="opacity:0;">>kernel presents ESRT in /sys/firmware/efi/esrt/
+		<li style="opacity:0;">/usr/bin/fwupdate - stages the update
 		<ul style="list-style-type:disc;padding-left:1em;">
 			<li style="opacity:0;">copies the firmware to /boot/efi/EFI/fedora/fw/
 			<li style="opacity:0;">uses libefivar to set a UEFI variable to point to that file, and to hold status
@@ -499,9 +500,10 @@ An aside about your system firmware changelog
     <div id="linux1" class=step data-x=1000 data-y=-6100 data-rotate=270 data-rotate-x=180 style="font-size:30px;">
 	And the Linux parts?<br>
 	<ul style="list-style-type:disc;";>
-		<li style="opacity:100;">/usr/bin/fwupdate - stages the update
+		<li>kernel presents ESRT in /sys/firmware/efi/esrt/
+		<li style="opacity:0;">/usr/bin/fwupdate - stages the update
 		<ul style="list-style-type:disc;padding-left:1em;">
-			<li style="opacity:100;">copies the firmware to /boot/efi/EFI/fedora/fw/
+			<li style="opacity:0;">copies the firmware to /boot/efi/EFI/fedora/fw/
 			<li style="opacity:0;">uses libefivar to set a UEFI variable to point to that file, and to hold status
 			<li style="opacity:0;">uses libefiboot to set up a boot entry for fwupdate.efi
 		</ul>
@@ -510,6 +512,31 @@ An aside about your system firmware changelog
     <div id="linux2" class=step data-x=1000 data-y=-6100 data-rotate=270 data-rotate-x=180 style="font-size:30px;">
 	And the Linux parts?<br>
 	<ul style="list-style-type:disc;";>
+		<li>kernel presents ESRT in /sys/firmware/efi/esrt/
+		<li style="opacity:100;">/usr/bin/fwupdate - stages the update
+		<ul style="list-style-type:disc;padding-left:1em;">
+			<li style="opacity:0;">copies the firmware to /boot/efi/EFI/fedora/fw/
+			<li style="opacity:0;">uses libefivar to set a UEFI variable to point to that file, and to hold status
+			<li style="opacity:0;">uses libefiboot to set up a boot entry for fwupdate.efi
+		</ul>
+	</ul>
+    </div>
+    <div id="linux3" class=step data-x=1000 data-y=-6100 data-rotate=270 data-rotate-x=180 style="font-size:30px;">
+	And the Linux parts?<br>
+	<ul style="list-style-type:disc;";>
+		<li>kernel presents ESRT in /sys/firmware/efi/esrt/
+		<li style="opacity:100;">/usr/bin/fwupdate - stages the update
+		<ul style="list-style-type:disc;padding-left:1em;">
+			<li style="opacity:100;">copies the firmware to /boot/efi/EFI/fedora/fw/
+			<li style="opacity:0;">uses libefivar to set a UEFI variable to point to that file, and to hold status
+			<li style="opacity:0;">uses libefiboot to set up a boot entry for fwupdate.efi
+		</ul>
+	</ul>
+    </div>
+    <div id="linux4" class=step data-x=1000 data-y=-6100 data-rotate=270 data-rotate-x=180 style="font-size:30px;">
+	And the Linux parts?<br>
+	<ul style="list-style-type:disc;";>
+		<li>kernel presents ESRT in /sys/firmware/efi/esrt/
 		<li style="opacity:100;">/usr/bin/fwupdate - stages the update
 		<ul style="list-style-type:disc;padding-left:1em;">
 			<li style="opacity:100;">copies the firmware to /boot/efi/EFI/fedora/fw/
@@ -518,9 +545,10 @@ An aside about your system firmware changelog
 		</ul>
 	</ul>
     </div>
-    <div id="linux3" class=step data-x=1000 data-y=-6100 data-rotate=270 data-rotate-x=180 style="font-size:30px;">
+    <div id="linux5" class=step data-x=1000 data-y=-6100 data-rotate=270 data-rotate-x=180 style="font-size:30px;">
 	And the Linux parts?<br>
 	<ul style="list-style-type:disc;";>
+		<li>kernel presents ESRT in /sys/firmware/efi/esrt/
 		<li style="opacity:100;">/usr/bin/fwupdate - stages the update
 		<ul style="list-style-type:disc;padding-left:1em;">
 			<li style="opacity:100;">copies the firmware to /boot/efi/EFI/fedora/fw/
